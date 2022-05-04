@@ -1,0 +1,22 @@
+{
+  "name": "3pm-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3PMearth/3pm-api.git"
+  },
+  "keywords": [
+    "nft"
+  ],
+  "author": "3PM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3PMearth/3pm-api/issues"
+  },
+  "homepage": "https://github.com/3PMearth/3pm-api#readme"
+}
