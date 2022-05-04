@@ -3,11 +3,11 @@ import { ethers } from 'ethers';
 
 import { balanceOfAbi } from './abi';
 
-// helper function to retrieve wallet address from metamask
-const getAccount = async () => {
+// helper function to connect wallet from metamask
+const connectWallet = async () => {
   if (window.ethereum) {
     try {
-      const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
       return accounts[0];
     } catch (error) {
       throw error.message;
@@ -46,7 +46,7 @@ const TestNFTOwnership = () => {
   const [isOwned, setIsOwned] = useState(false);
 
   useEffect(() => {
-    getAccount().then((res) => setWalletAddress(res));
+    connectWallet().then((res) => setWalletAddress(res));
   }, []);
 
   const handleClick = () => {
